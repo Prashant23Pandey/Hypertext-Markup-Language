@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Mobile Layout</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header, nav, main, aside, footer {
+            width: 100%;
+            padding: 15px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        nav a {
+            display: block; 
+            padding: 8px;
+            background-color: #ddd;
+            border-bottom: 1px solid #ccc;
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+        }
+
+        main {
+            background-color: white;
+            min-height: 200px;
+        }
+
+        aside {
+            background-color: #e0e0e0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Mobile-First Site</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <h2>Main Content Section</h2>
+        <p>On a mobile screen, all these sections stack vertically, which is the default, responsive behavior. The key is the viewport meta tag and ensuring we don't fix element widths to a large pixel value.</p>
+        <p>This content will naturally stretch to the full width of the screen.</p>
+    </main>
+
+    <aside>
+        <h3>Related Links</h3>
+        <p>This "sidebar" element appears directly beneath the main content on small screens, ensuring readability.</p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2025 Basic Layout | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
