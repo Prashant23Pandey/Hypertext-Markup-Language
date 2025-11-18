@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feedback Form</title>
+</head>
+<body>
+  <h2>Service Feedback</h2>
+  <form action="/submit-feedback" method="post">
+    
+    <fieldset>
+      <legend>How would you rate our service?</legend>
+      <label>
+        <input type="radio" name="service_rating" value="excellent" required> Excellent
+      </label><br>
+      <label>
+        <input type="radio" name="service_rating" value="good"> Good
+      </label><br>
+      <label>
+        <input type="radio" name="service_rating" value="fair"> Fair
+      </label><br>
+      <label>
+        <input type="radio" name="service_rating" value="poor"> Poor
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>What services are you interested in?</legend>
+      <label>
+        <input type="checkbox" name="services" value="web_design"> Web Design
+      </label><br>
+      <label>
+        <input type="checkbox" name="services" value="seo"> SEO
+      </label><br>
+      <label>
+        <input type="checkbox" name="services" value="hosting"> Hosting
+      </label>
+    </fieldset>
+
+    <button type="submit">Send Feedback</button>
+  </form>
+</body>
+</html>
