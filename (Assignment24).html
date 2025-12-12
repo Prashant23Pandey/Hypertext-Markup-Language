@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+</head>
+<body>
+
+    <h2>Sample HTML Form</h2>
+
+    <form action="/submit_page" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+
+        <p>Select your favorite color:</p>
+        <input type="radio" id="color_red" name="fav_color" value="red">
+        <label for="color_red">Red</label><br>
+        <input type="radio" id="color_blue" name="fav_color" value="blue">
+        <label for="color_blue">Blue</label><br>
+        <input type="radio" id="color_green" name="fav_color" value="green">
+        <label for="color_green">Green</label>
+        <br><br>
+
+        <p>Select interests (check all that apply):</p>
+        <input type="checkbox" id="interest1" name="interests" value="coding">
+        <label for="interest1"> Coding</label><br>
+        <input type="checkbox" id="interest2" name="interests" value="reading">
+        <label for="interest2"> Reading</label><br>
+        <input type="checkbox" id="interest3" name="interests" value="gaming">
+        <label for="interest3"> Gaming</label>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
