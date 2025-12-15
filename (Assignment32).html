@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and Data Types in JavaScript (with HTML)</title>
+</head>
+<body>
+    <h1>JavaScript Variables and Data Types Example</h1>
+    <p>Watch the browser console (usually F12 -> Console tab) for more details.</p>
+    <p>User Name: <strong id="outputName"></strong></p>
+    <p>User Age: <strong id="outputAge"></strong></p>
+    <p>Is Student: <strong id="outputIsStudent"></strong></p>
+    <p>Total Items (Numeric calculation): <strong id="outputTotalItems"></strong></p>
+    <script>
+        let userName = "Alice";
+        let userAge = 25;
+        let itemsInCart = 5;
+        let itemPrice = 10.50;
+        let isStudent = true;
+        let userProfile = {
+            name: userName,
+            age: userAge,
+            isStudent: isStudent
+        };
+        let colors = ["red", "green", "blue"];
+        let futureValue;
+        let favoriteColor = null;
+        let incorrectTotal = itemsInCart + itemPrice; 
+        let totalItemsDisplay = itemsInCart + "items";
+        document.getElementById("outputName").textContent = userName;
+        document.getElementById("outputAge").textContent = userAge;
+        document.getElementById("outputIsStudent").textContent = isStudent ? "Yes" : "No"; 
+        document.getElementById("outputTotalItems").textContent = totalItemsDisplay;        
+        console.log("String Example (Name):", userName, typeof userName);
+        console.log("Number Example (Age):", userAge, typeof userAge);
+        console.log("Boolean Example (isStudent):", isStudent, typeof isStudent);
+        console.log("Object Example (Profile):", userProfile, typeof userProfile);
+        console.log("Array Example (Colors):", colors, typeof colors); 
+        console.log("Undefined Example:", futureValue, typeof futureValue);
+        console.log("Null Example:", favoriteColor, typeof favoriteColor);
+        console.log("Incorrect Calculation (String concatenation):", incorrectTotal);
+        console.log("---------------------------------");
+    </script>
+</body>
+</html>
