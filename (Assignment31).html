@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Elements Behavior</title>
+    <style>
+        .block-div {
+            width: 300px;            
+            height: 100px; 
+            background-color: lightblue; 
+            border: 2px solid blue;    
+            margin: 10px;            
+            padding: 15px;             
+        }
+        .block-p {
+            width: 250px; 
+            height: 80px;              
+            background-color: lightgreen;
+            border: 2px solid green; 
+            margin: 10px;              
+            padding: 15px;               
+        }
+    </style>
+</head>
+<body>
+    <h2>Observing Block Elements</h2>
+    <div class="block-div">
+        This is a DIV element.
+        Even with a defined width, it takes up the full available horizontal space of its parent container because it is a block element.
+        Subsequent elements will appear on a new line.
+    </div>
+    <p class="block-p">
+        This is a P element.
+        Like the DIV, it takes up all available width and forces subsequent content onto a new line, demonstrating typical block behavior.
+    </p>
+    <span>This is a span element (inline) placed after the p element. Notice it is on a new line because the p element is a block element.</span>
+</body>
+</html>
