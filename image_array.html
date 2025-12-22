@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="a" width="290" src="https://thumbs.dreamstime.com/b/radha-krishna-deity-idol-iskcon-temple-pune-maharashtra-radha-krishna-deity-idol-iskcon-temple-pune-110508358.jpg" alt="">
+    <br>
+    <button oneclick="PrevImg()">Previous Image</button>
+    <button oneclick="NextImg()">Next Image</button>
+    <script>
+        let arr = ["https://i.pinimg.com/474x/39/4d/f3/394df388a2644d079587b6c3738ccb34.jpg","https://render.fineartamerica.com/images/images-profile-flow/400/images-medium-large-5/krishna-and-balaram-vishnudas.jpg","https://www.iskconbangalore.org/wp-content/uploads/2023/12/photo_6068691199457344350_y-1024x1024.jpg"]
+        let index = 0
+        function PrevImg(){
+            index -= 1
+            document.getElementsById("a").src = arr[(index)% arr.length]
+        }
+        function NextImg(){
+            index +=1
+            document.getElementsById("a").src = arr[(index + 1)% arr.length]
+        }
+    </script>
+</body>
+</html>
