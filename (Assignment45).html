@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<img id="myImage" src="https://i.pinimg.com/736x/a3/ae/ba/a3aebab16fbceeac6dafcf5703c6aa4b.jpg" width="500" alt="Slideshow Image"><br><br>
+<br>
+<button onclick="prevImage()">Previous</button>
+<button onclick="nextImage()">Next</button>
+<script>
+    var images = ["https://i.pinimg.com/736x/a3/ae/ba/a3aebab16fbceeac6dafcf5703c6aa4b.jpg", "https://i.pinimg.com/1200x/7b/f4/8e/7bf48e9e08599e7a0fb913f8be422816.jpg","https://i.pinimg.com/1200x/0f/69/1d/0f691d7f67cb652a93a3a85bbfec09ac.jpg","https://i.pinimg.com/736x/23/d4/31/23d431240a6b92dbc50d450ced83ad5e.jpg"];
+    var index = 0;
+    function nextImage() {
+    index = (index + 1) % images.length;
+    document.getElementById("myImage").src = images[index];
+    }
+    function prevImage() {
+    index = (index - 1 + images.length) % images.length;
+    document.getElementById("myImage").src = images[index];
+    }
+</script>
+</body>
+</html>
